@@ -40,7 +40,7 @@ pipeline {
                 export PATH=/Applications/Docker.app/Contents/Resources/bin:$PATH
                 docker stop myapp-container || true
                 docker rm myapp-container || true
-                docker run -d --name myapp-container -p 8080:8080 myapp:latest
+                docker run -d --name myapp-container -p 8081:8080 myapp:latest
                 '''
             }
         }
